@@ -6,7 +6,8 @@ UIImage progressive download.
 RSImageView is a simple and easy-to-use UIImageView subclass for the iOS app. The RSImageView class uses NSURLConnection behind, and constructs the UIImage from the downloaded data from the delegate methods of NSURLConnections.
 
 
-!https://docs.google.com/uc?export=download&id=0B6gRtssGeIGqcXZPazMwb3RzaU0!
+![Screenshot](https://docs.google.com/uc?export=download&id=0B6gRtssGeIGqcXZPazMwb3RzaU0!)
+
 
 h2. Usage
 
