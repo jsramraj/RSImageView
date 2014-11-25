@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +15,43 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cd8-y5-0bB" customClass="RSImageView">
+                                <rect key="frame" x="185" y="50" width="230" height="345"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="Do7-bj-QGq"/>
+                                    <constraint firstAttribute="height" constant="345" id="jy1-2h-7BP"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hJ5-oB-DLh">
+                                <rect key="frame" x="185" y="415" width="230" height="2"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGp-XU-03q">
+                                <rect key="frame" x="284" y="437" width="33" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startDownloading:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7n1-KC-eyk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TGp-XU-03q" firstAttribute="centerX" secondItem="cd8-y5-0bB" secondAttribute="centerX" id="272-AO-1LL"/>
+                            <constraint firstAttribute="centerX" secondItem="cd8-y5-0bB" secondAttribute="centerX" id="NrI-vR-R63"/>
+                            <constraint firstItem="cd8-y5-0bB" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="YW9-F1-RUI"/>
+                            <constraint firstItem="hJ5-oB-DLh" firstAttribute="top" secondItem="cd8-y5-0bB" secondAttribute="bottom" constant="20" id="cut-2m-8P4"/>
+                            <constraint firstItem="TGp-XU-03q" firstAttribute="centerY" secondItem="cd8-y5-0bB" secondAttribute="centerY" constant="229.5" id="rwI-5v-45Y"/>
+                            <constraint firstItem="TGp-XU-03q" firstAttribute="top" secondItem="hJ5-oB-DLh" secondAttribute="bottom" constant="20" id="vQ0-j3-ehp"/>
+                            <constraint firstItem="hJ5-oB-DLh" firstAttribute="width" secondItem="cd8-y5-0bB" secondAttribute="width" id="wgE-xd-1tu"/>
+                            <constraint firstItem="cd8-y5-0bB" firstAttribute="centerX" secondItem="hJ5-oB-DLh" secondAttribute="centerX" id="ziG-bT-2FQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="partialImage" destination="cd8-y5-0bB" id="zl3-hF-BeX"/>
+                        <outlet property="progressMeter" destination="hJ5-oB-DLh" id="Ej8-zI-vaM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

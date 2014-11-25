@@ -14,6 +14,7 @@
 		273850341A24656F00DF7609 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 273850331A24656F00DF7609 /* Images.xcassets */; };
 		273850371A24656F00DF7609 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 273850351A24656F00DF7609 /* LaunchScreen.xib */; };
 		273850431A24657000DF7609 /* RSImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 273850421A24657000DF7609 /* RSImageViewTests.m */; };
+		2738504E1A2465A300DF7609 /* RSImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738504D1A2465A300DF7609 /* RSImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		2738503C1A24657000DF7609 /* RSImageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSImageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		273850411A24657000DF7609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		273850421A24657000DF7609 /* RSImageViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSImageViewTests.m; sourceTree = "<group>"; };
+		2738504C1A2465A300DF7609 /* RSImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSImageView.h; sourceTree = "<group>"; };
+		2738504D1A2465A300DF7609 /* RSImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				2738502B1A24656F00DF7609 /* AppDelegate.m */,
 				2738502D1A24656F00DF7609 /* ViewController.h */,
 				2738502E1A24656F00DF7609 /* ViewController.m */,
+				2738504C1A2465A300DF7609 /* RSImageView.h */,
+				2738504D1A2465A300DF7609 /* RSImageView.m */,
 				273850301A24656F00DF7609 /* Main.storyboard */,
 				273850331A24656F00DF7609 /* Images.xcassets */,
 				273850351A24656F00DF7609 /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 				2738502F1A24656F00DF7609 /* ViewController.m in Sources */,
 				2738502C1A24656F00DF7609 /* AppDelegate.m in Sources */,
 				273850291A24656F00DF7609 /* main.m in Sources */,
+				2738504E1A2465A300DF7609 /* RSImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RSImageView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    
+    IBOutlet RSImageView *partialImage;
+    IBOutlet UIProgressView *progressMeter;
+}
+
+- (IBAction)startDownloading:(id)sender;
 
 
 @end
