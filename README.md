@@ -9,7 +9,8 @@ RSImageView is a simple and easy-to-use UIImageView subclass for the iOS app. Th
 ![Screenshot](/Screenshots/screenshot1.png)
 
 
-h2. Usage
+Usage
+-----
 
 <pre>
 RSImageView *imageView = [[RSImageView alloc] initWithFrame:CGRectMake(10, 30, 340, 400)];
@@ -21,4 +22,4 @@ RSImageView *imageView = [[RSImageView alloc] initWithFrame:CGRectMake(10, 30, 3
 </pre>
 (see the sample project for more details)
 
-You can stop the download by calling the "pause" action of RSImageView at any time.
+You can stop the download by calling the <i>pause</i> action of <i>RSImageView</i> at any time.
